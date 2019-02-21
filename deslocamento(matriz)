@@ -10,7 +10,7 @@ PMatrix desloca2 = new PMatrix3D(1.0, 0, 0, 100,
 
 void setup(){
   size(500, 500, P3D);  //tamanho da tela, habilita 3d
-  rectMode(CENTER);    //pivo quadrado pelo centro
+  rectMode(CENTER);    //pivo quadrado no centro
   ellipseMode(CORNER);  //pivo circulo no canto
 }
 
