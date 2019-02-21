@@ -17,7 +17,7 @@ void setup(){
 void draw(){
   background(0);    //plano de fundo preto
   
-  pushStyle();      //customiza estilo
+  pushStyle();      //customiza estilo temporário
   
   noFill();          //não preencher desenho
   stroke(255);        //cor da linha
