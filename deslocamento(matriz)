@@ -4,7 +4,7 @@ PMatrix translation = new PMatrix3D(1.0, 0, 0, 250,
                                     0, 0, 0, 1.0);    //desloca objeto para 250 250
 
 PMatrix desloca2 = new PMatrix3D(1.0, 0, 0, 100, 
-                                0, 1.0, 0,100,
+                                0, 1.0, 0, 100,
                                 0, 0, 1.0, 0,
                                 0, 0, 0, 1.0);        //desloca objeto para 100 100                            
 
