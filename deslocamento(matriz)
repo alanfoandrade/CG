@@ -23,13 +23,13 @@ void draw(){
   stroke(255);        //cor da linha
   strokeWeight(2.0);   //grossura da linha
   
-  pushMatrix();       //aplica matriz de deslocamento "translação"
+  pushMatrix();   //aplica matriz deslocamento temporario      
   
-  applyMatrix(translation);
+  applyMatrix(translation);  //aplica matriz de deslocamento "translação"
   
   rect(0, 0, 100, 100);  //desenha quadrado iniciado em 0 0 e tamanho 100
   
-  popMatrix();    //restaura matriz de translação
+  popMatrix();    //restaura matriz de deslocamento padrão
   popStyle();    //restaura estilo padrão
   
   //applyMatrix(desloca2);  //aplica matriz de deslocamento "desloca2"
@@ -37,3 +37,4 @@ void draw(){
   ellipse(0, 0, 100, 100);    //desenha circulo iniciado em 0 0 e diametro 100
   
 }
+
