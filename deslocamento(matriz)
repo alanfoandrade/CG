@@ -1,0 +1,39 @@
+PMatrix translation = new PMatrix3D(1.0, 0, 0, 250, 
+                                    0, 1.0, 0, 250,
+                                    0, 0, 1.0, 0,
+                                    0, 0, 0, 1.0);    //desloca objeto para 250 250
+
+PMatrix desloca2 = new PMatrix3D(1.0, 0, 0, 100, 
+                                0, 1.0, 0,100,
+                                0, 0, 1.0, 0,
+                                0, 0, 0, 1.0);        //desloca objeto para 100 100                            
+
+void setup(){
+  size(500, 500, P3D);  //tamanho da tela, habilita 3d
+  rectMode(CENTER);    //pivo quadrado pelo centro
+  ellipseMode(CORNER);  //pivo circulo no canto
+}
+
+void draw(){
+  background(0);    //plano de fundo preto
+  
+  pushStyle();      //customiza estilo
+  
+  noFill();          //não preencher desenho
+  stroke(255);        //cor da linha
+  strokeWeight(2.0);   //grossura da linha
+  
+  pushMatrix();       //aplica matriz de deslocamento "translação"
+  
+  applyMatrix(translation);
+  
+  rect(0, 0, 100, 100);  //desenha quadrado iniciado em 0 0 e tamanho 100
+  
+  popMatrix();    //restaura matriz de translação
+  popStyle();    //restaura estilo padrão
+  
+  //applyMatrix(desloca2);  //aplica matriz de deslocamento "desloca2"
+  
+  ellipse(0, 0, 100, 100);    //desenha circulo iniciado em 0 0 e diametro 100
+  
+}
